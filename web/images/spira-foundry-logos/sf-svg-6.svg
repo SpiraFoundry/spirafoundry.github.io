@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <!-- Centered Interlocking Circles + Floating Split-Tone Crystal Icon -->
+  <g>
+    <!-- Left Circle (Top-Left to Bottom-Right) -->
+    <circle cx="58" cy="80" r="42" fill="none" stroke="#38BDF8" stroke-width="11" stroke-linecap="round" stroke-dasharray="195 70" stroke-dashoffset="25" />
+    
+    <!-- Right Circle (Bottom-Right to Top-Left) -->
+    <circle cx="102" cy="80" r="42" fill="none" stroke="#F8FAFC" stroke-width="11" stroke-linecap="round" stroke-dasharray="195 70" stroke-dashoffset="-107" />
+    
+    <!-- Central FF-Style Crystal: Recessed Tips for Clean Margin -->
+    <!-- Left Light Facet -->
+    <polygon points="80,56 69,80 80,104" fill="#7DD3FC" />
+    <!-- Right Core Facet -->
+    <polygon points="80,56 91,80 80,104" fill="#0284C7" />
+  </g>
+</svg>
