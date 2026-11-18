@@ -36,13 +36,11 @@ void main() {
         ),
         const link(
           rel: 'stylesheet',
-          href:
-              'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700&display=swap',
+          href: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700&display=swap',
         ),
         const link(
           rel: 'stylesheet',
-          href:
-              'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap',
+          href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap',
         ),
         const link(rel: 'stylesheet', href: 'styles.css'),
         const script(src: 'js/shader.js', defer: true),

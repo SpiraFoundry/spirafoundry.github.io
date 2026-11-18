@@ -135,8 +135,7 @@ abstract final class SiteContent {
       supportEmail: cainsCodexSupportEmail,
       privacyPolicyPath: '/cains-codex/privacy-policy',
       termsOfUsePath: '/cains-codex/terms-of-use',
-      disclaimer:
-          "Copyright © 2026 Adam M. All Rights Reserved. Cain's Codex is an unofficial fan-made companion application and is not affiliated with, endorsed, or sponsored by Blizzard Entertainment, Inc. Diablo II and Diablo II: Resurrected are trademarks or registered trademarks of Blizzard Entertainment, Inc.",
+      disclaimer: "Copyright © 2026 Adam M. All Rights Reserved. Cain's Codex is an unofficial fan-made companion application and is not affiliated with, endorsed, or sponsored by Blizzard Entertainment, Inc. Diablo II and Diablo II: Resurrected are trademarks or registered trademarks of Blizzard Entertainment, Inc.",
       slides: [
         ProjectSlide(
           tag: 'COMING SOON',
@@ -157,8 +156,7 @@ abstract final class SiteContent {
       name: 'Adam Moas',
       initials: 'AM',
       role: 'Co-Creator & Engineer',
-      summary:
-          'Engineer with a background in quality engineering, performance and deployment testing, UI frontend and backend automation, microservices, and cloud infrastructure. Enjoys building developer tooling and lightweight utilities with clean, responsive interfaces.',
+      summary: 'Engineer with a background in quality engineering, performance and deployment testing, UI frontend and backend automation, microservices, and cloud infrastructure. Enjoys building developer tooling and lightweight utilities with clean, responsive interfaces.',
       githubUrl: orgGithubUrl,
       accentCyan: true,
     ),
@@ -166,8 +164,7 @@ abstract final class SiteContent {
       name: 'Dale Smith',
       initials: 'DS',
       role: 'Co-Creator & Scientist',
-      summary:
-          'Scientist and educator with a background in academia. Bringing experience from mathematics and physics to the tech industry. Passionate about optimising algorithms and exploring novel solutions to problems.',
+      summary: 'Scientist and educator with a background in academia. Bringing experience from mathematics and physics to the tech industry. Passionate about optimising algorithms and exploring novel solutions to problems.',
       githubUrl: orgGithubUrl,
       accentCyan: false,
     ),
