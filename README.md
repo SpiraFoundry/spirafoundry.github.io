@@ -23,7 +23,7 @@ Built with [Dart](https://dart.dev) and [Jaspr](https://jaspr.site) (`static` mo
 
 ### Prerequisites
 
-- Dart SDK `^3.10.0`
+- Dart SDK `^3.13.0`
 - Jaspr CLI:
 
 ```sh
