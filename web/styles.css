@@ -1141,10 +1141,40 @@ h1, h2, h3, h4, p {
 }
 
 .project-showcase-actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
   gap: var(--space-sm);
+  width: 100%;
+}
+
+.project-showcase-actions > a {
+  width: 100%;
+  justify-content: center;
+  padding: 0.7rem 0.65rem;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .project-showcase-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: auto;
+  }
+
+  .project-showcase-actions > a {
+    width: auto;
+    justify-content: flex-start;
+    padding: 0.75rem 1.25rem;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+  }
+
+  .project-showcase-actions > a.btn-ghost {
+    padding: 0.75rem 1.5rem;
+  }
 }
 
 .carousel-shell {

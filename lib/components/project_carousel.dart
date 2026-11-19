@@ -112,7 +112,7 @@ class _ProjectCarouselState extends State<ProjectCarousel> {
       div(classes: 'carousel-caption-panel', [
         div(classes: 'carousel-caption-panel__head', [
           span(classes: 't-label-sm section-kicker', [.text(slide.tag)]),
-          h3(classes: 't-headline-md story-copy__title', [.text(slide.title)]),
+          h3(classes: 't-headline-md story-copy__title', [.text(slide.captionTitle ?? slide.title)]),
           p(classes: 't-body-md story-copy__body', [.text(slide.description)]),
         ]),
         if (slide.features.isNotEmpty)
