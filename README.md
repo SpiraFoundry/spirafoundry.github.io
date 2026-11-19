@@ -8,7 +8,6 @@ Built with [Dart](https://dart.dev) and [Jaspr](https://jaspr.site) (`static` mo
 
 - `/` — Home overview, featured projects, and creator profiles
 - `/projects` — Published projects showcase with category filters and feature carousel
-- `/about` — About Spira Foundry and creators
 - `/cains-codex/privacy-policy` — Privacy Policy for Cain's Codex
 - `/cains-codex/terms-of-use` — Terms of Use for Cain's Codex
 

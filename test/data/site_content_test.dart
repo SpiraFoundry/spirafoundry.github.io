@@ -21,7 +21,7 @@ void main() {
         expect(route.path, startsWith('/'));
       }
 
-      expect(paths, containsAll(['/', '/projects', '/about']));
+      expect(paths, containsAll(['/', '/projects']));
     });
   });
 
