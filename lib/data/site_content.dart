@@ -104,7 +104,6 @@ abstract final class SiteContent {
   static const navRoutes = [
     NavRouteItem(label: 'Home', path: '/'),
     NavRouteItem(label: 'Projects', path: '/projects'),
-    NavRouteItem(label: 'About', path: '/about'),
   ];
 
   // About Spira Foundry (Hero)

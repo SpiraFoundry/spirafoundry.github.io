@@ -38,14 +38,6 @@ class Home extends StatelessComponent {
                 span([.text('Explore Projects')]),
               ]),
             ),
-            Link(
-              to: '/about',
-              classes: 'btn-ghost t-body-md',
-              child: Component.fragment([
-                const MaterialIcon('group', size: 18),
-                span([.text('About Us')]),
-              ]),
-            ),
           ]),
         ]),
       ]),

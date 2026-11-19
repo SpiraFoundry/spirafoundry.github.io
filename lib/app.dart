@@ -5,7 +5,6 @@ import 'package:jaspr_router/jaspr_router.dart';
 import 'components/footer.dart';
 import 'components/header.dart';
 import 'data/site_content.dart';
-import 'pages/about.dart';
 import 'pages/home.dart';
 import 'pages/legal_document.dart';
 import 'pages/privacy_policy.dart';
@@ -121,11 +120,6 @@ class App extends StatelessComponent {
               path: '/projects',
               title: 'Projects · ${SiteContent.orgName}',
               builder: (context, state) => const ProjectsPage(),
-            ),
-            Route(
-              path: '/about',
-              title: 'About Us · ${SiteContent.orgName}',
-              builder: (context, state) => const About(),
             ),
           ],
         ),
