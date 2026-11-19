@@ -1158,7 +1158,8 @@ h1, h2, h3, h4, p {
   position: relative;
   width: 100%;
   min-height: 18rem;
-  aspect-ratio: 16 / 10;
+  display: flex;
+  flex-direction: column;
   border-radius: 1rem;
   overflow: hidden;
   background: var(--surface-container-lowest);
@@ -1166,9 +1167,16 @@ h1, h2, h3, h4, p {
   box-shadow: inset 0 0 40px rgba(0, 240, 255, 0.04);
 }
 
+@media (min-width: 768px) {
+  .carousel-viewport {
+    aspect-ratio: 16 / 10;
+  }
+}
+
 .carousel-image {
   width: 100%;
-  height: 100%;
+  flex: 1;
+  min-height: 0;
   padding: var(--space-md);
   object-fit: contain;
   display: block;
@@ -1177,8 +1185,9 @@ h1, h2, h3, h4, p {
 .carousel-placeholder {
   position: relative;
   width: 100%;
-  height: 100%;
+  flex: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: clamp(1.75rem, 4vw, 3rem);
@@ -1209,6 +1218,7 @@ h1, h2, h3, h4, p {
   text-align: center;
   gap: var(--space-sm);
   max-width: 34rem;
+  margin: auto;
 }
 
 .carousel-placeholder__icon {
