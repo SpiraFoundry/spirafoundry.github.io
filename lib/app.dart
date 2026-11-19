@@ -24,9 +24,9 @@ class App extends StatelessComponent {
           title: "Privacy Policy · Cain's Codex · ${SiteContent.orgName}",
           builder: (context, state) => const PrivacyPolicyPage(
             projectName: "Cain's Codex",
-            effectiveDate: '2026-11-14',
+            effectiveDate: '2026-11-18',
             contactEmail: SiteContent.cainsCodexSupportEmail,
-            summary: "Cain's Codex is an offline-first companion app for Diablo II: Resurrected that does not collect any user information.",
+            summary: "Cain's Codex is an unofficial, offline-first companion app for Diablo II: Resurrected. Cain's Codex does not collect any user information.",
             sections: [
               (
                 heading: 'Data Collection',
@@ -62,7 +62,7 @@ class App extends StatelessComponent {
             projectName: "Cain's Codex",
             documentType: 'Terms of Use',
             topbarTag: 'Legal & Terms',
-            effectiveDate: '2026-11-14',
+            effectiveDate: '2026-11-18',
             contactEmail: SiteContent.cainsCodexSupportEmail,
             summary: "These Terms of Use govern your use of Cain's Codex, an offline-first companion application for Diablo II: Resurrected distributed for macOS and Windows, including builds obtained via the Microsoft Store. By installing or using the application, you agree to these terms.",
             sections: [

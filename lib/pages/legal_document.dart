@@ -72,14 +72,6 @@ class _LegalDocumentPageState extends State<LegalDocumentPage> {
                 if (component.contactEmail case final email? when component.sections[i].heading == 'Contact') ...[
                   .text(' Email us at '),
                   a(href: 'mailto:$email', classes: 'legal-doc-link', [.text(email)]),
-                  .text(' or reach out via the '),
-                  a(
-                    href: SiteContent.orgGithubUrl,
-                    target: Target.blank,
-                    attributes: const {'rel': 'noopener noreferrer'},
-                    classes: 'legal-doc-link',
-                    [.text('${SiteContent.orgName} GitHub organization')],
-                  ),
                   .text('.'),
                 ],
               ]),
