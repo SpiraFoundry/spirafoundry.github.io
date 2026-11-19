@@ -26,7 +26,7 @@ class App extends StatelessComponent {
             projectName: "Cain's Codex",
             effectiveDate: '2026-11-14',
             contactEmail: SiteContent.cainsCodexSupportEmail,
-            summary: "Cain's Codex is a 100% offline companion app for Diablo II: Resurrected built with zero network calls, zero analytics, and no user accounts.",
+            summary: "Cain's Codex is an offline-first companion app for Diablo II: Resurrected that does not collect any user information.",
             sections: [
               (
                 heading: 'Data Collection',

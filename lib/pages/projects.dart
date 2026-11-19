@@ -69,7 +69,7 @@ class _ProjectsPageState extends State<ProjectsPage> {
                       target: Target.blank,
                       attributes: const {'rel': 'noopener noreferrer'},
                       [
-                        const MaterialIcon('code', size: 16),
+                        const MaterialIcon('arrow_outward', size: 16),
                         span([.text('GitHub Repo')]),
                       ],
                     ),
