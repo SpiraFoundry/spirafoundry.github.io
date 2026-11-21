@@ -66,7 +66,7 @@ class App extends StatelessComponent {
             projectName: "Cain's Codex",
             documentType: 'Terms of Use',
             topbarTag: 'Legal & Terms',
-            effectiveDate: '2026-11-14',
+            effectiveDate: '2026-11-18',
             contactEmail: SiteContent.cainsCodexSupportEmail,
             summary: "These Terms of Use govern your use of Cain's Codex, an offline-first companion application for Diablo II: Resurrected distributed for macOS and Windows, including builds obtained via the Microsoft Store. By installing or using the application, you agree to these terms.",
             sections: [

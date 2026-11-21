@@ -25,6 +25,7 @@ class ProjectSlide {
   const ProjectSlide({
     required this.tag,
     required this.title,
+    this.captionTitle,
     required this.description,
     required this.features,
     this.imageSrc,
@@ -32,6 +33,7 @@ class ProjectSlide {
 
   final String tag;
   final String title;
+  final String? captionTitle;
   final String description;
   final List<String> features;
   final String? imageSrc;
@@ -139,6 +141,7 @@ abstract final class SiteContent {
         ProjectSlide(
           tag: 'COMING SOON',
           title: 'Preview & Feature Showcase',
+          captionTitle: 'Preview Details',
           description: "Screenshots and full feature details for Cain's Codex will be published here closer to launch.",
           features: [],
         ),
@@ -147,7 +150,7 @@ abstract final class SiteContent {
   ];
 
   // About Us Section
-  static const aboutUsHeading = 'Meet the Creators';
+  static const aboutUsHeading = 'About';
   static const aboutUsDescription = 'Two friends building thoughtful, lightweight software together.';
 
   static const founders = [

@@ -97,8 +97,6 @@ class _LegalDocumentPageState extends State<LegalDocumentPage> {
               final email? => [
                 .text(' Email us at '),
                 _buildLegalLink(label: email, href: 'mailto:$email'),
-                .text(' or reach out via the '),
-                _buildLegalLink(label: '${SiteContent.orgName} GitHub organization', href: SiteContent.orgGithubUrl),
                 .text('.'),
               ],
               null => const <Component>[],
