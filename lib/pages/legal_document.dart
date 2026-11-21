@@ -67,14 +67,7 @@ class _LegalDocumentPageState extends State<LegalDocumentPage> {
               h2(classes: 'legal-doc-section__heading', [
                 .text('${i + 1}. ${component.sections[i].heading}'),
               ]),
-              p(classes: 'legal-doc-section__body', [
-                .text(component.sections[i].body),
-                if (component.contactEmail case final email? when component.sections[i].heading == 'Contact') ...[
-                  .text(' Email us at '),
-                  a(href: 'mailto:$email', classes: 'legal-doc-link', [.text(email)]),
-                  .text('.'),
-                ],
-              ]),
+              ..._buildSectionBody(component.sections[i]),
             ]),
         ]),
       ]),
@@ -90,4 +83,72 @@ class _LegalDocumentPageState extends State<LegalDocumentPage> {
       ]),
     ]);
   }
+
+  List<Component> _buildSectionBody(({String heading, String body}) sectionData) {
+    final paragraphs = sectionData.body.split('\n\n');
+    final isContactSection = sectionData.heading == 'Contact';
+
+    return [
+      for (var i = 0; i < paragraphs.length; i++)
+        p(classes: 'legal-doc-section__body', [
+          ..._buildParagraphChildren(paragraphs[i]),
+          if (isContactSection && i == paragraphs.length - 1)
+            ...switch (component.contactEmail) {
+              final email? => [
+                .text(' Email us at '),
+                _buildLegalLink(label: email, href: 'mailto:$email'),
+                .text('.'),
+              ],
+              null => const <Component>[],
+            },
+        ]),
+    ];
+  }
+
+  List<Component> _buildParagraphChildren(String paragraph) {
+    return [
+      for (final token in parseLegalParagraphTokens(paragraph))
+        switch (token.href) {
+          final href? => _buildLegalLink(label: token.text, href: href),
+          null => .text(token.text),
+        },
+    ];
+  }
+
+  Component _buildLegalLink({required String label, required String href}) {
+    final isExternal = href.startsWith('https://') || href.startsWith('http://');
+    return a(
+      href: href,
+      target: isExternal ? Target.blank : null,
+      attributes: isExternal ? const {'rel': 'noopener noreferrer'} : null,
+      classes: 'legal-doc-link',
+      [.text(label)],
+    );
+  }
+}
+
+/// Token representing plain text or an inline hyperlink inside a legal paragraph.
+typedef LegalTextToken = ({String text, String? href});
+
+final _legalInlineLinkPattern = RegExp(r'\[([^\]]+)\]\(((?:https?://|mailto:)[^)]+)\)');
+
+/// Splits [paragraph] into plain text and `[label](url)` link tokens for
+/// `http://`, `https://`, and `mailto:` references.
+List<LegalTextToken> parseLegalParagraphTokens(String paragraph) {
+  final tokens = <LegalTextToken>[];
+  var cursor = 0;
+
+  for (final match in _legalInlineLinkPattern.allMatches(paragraph)) {
+    if (match.start > cursor) {
+      tokens.add((text: paragraph.substring(cursor, match.start), href: null));
+    }
+    tokens.add((text: match.group(1)!, href: match.group(2)!));
+    cursor = match.end;
+  }
+
+  if (cursor < paragraph.length) {
+    tokens.add((text: paragraph.substring(cursor), href: null));
+  }
+
+  return tokens;
 }

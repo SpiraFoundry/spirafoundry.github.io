@@ -24,33 +24,37 @@ class App extends StatelessComponent {
           title: "Privacy Policy · Cain's Codex · ${SiteContent.orgName}",
           builder: (context, state) => const PrivacyPolicyPage(
             projectName: "Cain's Codex",
-            effectiveDate: '2026-11-18',
+            effectiveDate: '2026-11-20',
             contactEmail: SiteContent.cainsCodexSupportEmail,
-            summary: "Cain's Codex is an unofficial, offline-first companion app for Diablo II: Resurrected. Cain's Codex does not collect any user information.",
+            summary: "Cain's Codex, published by Adam M., is an unofficial, offline-first companion app for Diablo II: Resurrected. It is designed to run locally on your device without requiring an internet connection, does not include any analytics SDKs, and requires no user account sign-ups. This Privacy Policy explains how your local app data is handled and what platform-level information Microsoft may independently collect when you install or use the app through the Microsoft Store.",
             sections: [
               (
                 heading: 'Data Collection',
-                body: "Cain's Codex runs 100% offline with zero network calls. It does not collect, sell, or transmit personal data, usage analytics, crash telemetry, or tracking identifiers to external servers.",
+                body: "Cain's Codex itself operates 100% offline with zero network calls. The application contains no analytics, advertising, or crash-reporting SDKs and does not collect, transmit, sell, or share personal data or tracking identifiers.",
               ),
               (
-                heading: 'Local Storage',
-                body: 'Every stash edit, wishlist item, crafted badge, selected theme (Codex or Classic), and custom keyboard shortcut is auto-saved locally on your device under your control.',
+                heading: 'Local Storage & Data Removal',
+                body: "Every stash edit, wishlist item, crafted badge, selected theme, and custom keyboard shortcut is stored locally on your device.\n\nYou can clear locally stored app data directly within Cain's Codex using the provided options in the Settings screen.",
               ),
               (
-                heading: 'Third-Party Services & Storefronts',
-                body: "Cain's Codex contains no third-party analytics, ad networks, or tracking SDKs. Storefronts you download the app from (such as the Microsoft Store) handle download, billing, and update activity under their own privacy policies.",
+                heading: 'Microsoft Store & Windows Platform Diagnostics',
+                body: "When you install or use Cain's Codex through the Microsoft Store on Windows, Microsoft may independently collect store and operating system diagnostic information, including app acquisitions, aggregated active-device and session usage metrics, and crash or unresponsiveness reports via Windows Error Reporting.\n\nMicrosoft makes aggregated and anonymized summaries of these metrics (Acquisitions, Usage, and Health reports, along with public Store Ratings & Reviews) available to Adam M. through Microsoft Partner Center solely to monitor app reliability, compatibility, and performance, never direct personally identifiable user records from the app. This platform-level collection is governed by the [Microsoft Privacy Statement](https://privacy.microsoft.com/). You can review and manage your Windows diagnostic data preferences at any time under Windows Settings → Privacy & security → Diagnostics & feedback.",
+              ),
+              (
+                heading: 'Support Inquiries & Website Hosting',
+                body: 'If you email support or open an issue on GitHub, we receive the email address, display name, and message details you choose to provide. Support correspondence is used solely to respond to your inquiry, is never sold or shared for marketing, and is deleted upon request.\n\nThis Privacy Policy page is hosted on GitHub Pages, which automatically processes standard HTTP request metadata (such as IP address, user-agent, and request timestamp) to deliver and secure the site under the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).',
               ),
               (
                 heading: "Children's Privacy",
                 body: "Cain's Codex does not collect or solicit personal information from anyone, including children of any age.",
               ),
               (
-                heading: 'Policy Updates',
-                body: 'Any updates to this Privacy Policy will be posted on this page with a revised effective date.',
+                heading: 'Data Retention & Policy Updates',
+                body: "Local app data remains on your device until you clear or uninstall the app. Platform-level metrics surfaced in Microsoft Partner Center are retained by Microsoft according to its retention schedules, and support correspondence is kept only as long as needed to resolve your request.\n\nWe may update this Privacy Policy from time to time as Cain's Codex, storefront requirements, or applicable laws evolve. Any updates will be posted at this URL with a revised effective date and take effect when posted. We encourage you to review this page periodically.",
               ),
               (
                 heading: 'Contact',
-                body: 'Questions about this policy?',
+                body: 'Questions about this Privacy Policy or requests to delete support correspondence?',
               ),
             ],
           ),
