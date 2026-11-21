@@ -66,41 +66,37 @@ class App extends StatelessComponent {
             projectName: "Cain's Codex",
             documentType: 'Terms of Use',
             topbarTag: 'Legal & Terms',
-            effectiveDate: '2026-11-18',
+            effectiveDate: '2026-11-21',
             contactEmail: SiteContent.cainsCodexSupportEmail,
-            summary: "These Terms of Use govern your use of Cain's Codex, an offline-first companion application for Diablo II: Resurrected distributed for macOS and Windows, including builds obtained via the Microsoft Store. By installing or using the application, you agree to these terms.",
+            summary: "These Terms of Use govern your access to and use of the Cain's Codex website, documentation, and support resources hosted by Spira Foundry. Your acquisition, installation, and use of the Cain's Codex Windows application through the Microsoft Store are governed separately by Microsoft's Standard Application License Terms (SALT).",
             sections: [
               (
-                heading: 'License & Permitted Use',
-                body: "Copyright © 2026 Adam M. All Rights Reserved. You are granted a personal, non-exclusive, non-transferable, revocable license to install and use Cain's Codex on supported devices in accordance with applicable storefront rules (including the Microsoft Store Standard Application License Terms when distributed through the Microsoft Store) and these Terms.",
+                heading: 'Scope & Application License (Microsoft Store SALT)',
+                body: "These Terms of Use apply to the Cain's Codex web pages, documentation, and support materials published on the Spira Foundry website.\n\nWhen you download or use the Cain's Codex Windows application via the Microsoft Store, your license to install and use the application is governed by Microsoft's [Standard Application License Terms](https://www.microsoft.com/en-us/storedocs/terms-of-sale) (SALT) and applicable Microsoft Store terms of sale, rather than a custom end-user license agreement on this website.",
               ),
               (
                 heading: 'Unofficial Companion & Trademark Notice',
-                body: "Cain's Codex is an unofficial fan-made companion application and is not affiliated with, endorsed, or sponsored by Blizzard Entertainment, Inc. Diablo II and Diablo II: Resurrected are trademarks or registered trademarks of Blizzard Entertainment, Inc.",
+                body: "Cain's Codex, published by Adam M., is an unofficial fan-made companion application and is not affiliated with, endorsed, or sponsored by Blizzard Entertainment, Inc. Diablo II and Diablo II: Resurrected are trademarks or registered trademarks of Blizzard Entertainment, Inc.",
               ),
               (
-                heading: 'Restrictions',
-                body: "You may not redistribute, sell, rent, sublicense, or use Cain's Codex for unlawful purposes, except as expressly permitted by an applicable storefront agreement.",
+                heading: 'Website & Documentation Permitted Use',
+                body: "You may access and use this website and its documentation solely for personal, non-commercial reference and support purposes. You may not copy, republish, scrape, redistribute, or commercially exploit the website's original text, visual assets, or documentation, nor use the site for any unlawful purpose.",
               ),
               (
                 heading: 'Intellectual Property',
-                body: "Cain's Codex, its original artwork, documentation, and assets remain the property of Adam M. Third-party and open-source components remain governed by their respective licenses.",
-              ),
-              (
-                heading: 'Third-Party Storefronts',
-                body: 'When downloaded via the Microsoft Store or another third-party distribution platform, that platform’s terms of sale, update mechanisms, and developer policies also apply to your acquisition and use of the application.',
+                body: "Copyright © 2026 Adam M. All Rights Reserved. The Cain's Codex name, original artwork, documentation, and website content remain the property of Adam M. and Spira Foundry. Third-party and open-source software or assets referenced or used in connection with the project remain governed by their respective licenses.",
               ),
               (
                 heading: 'Disclaimer of Warranties',
-                body: "Cain's Codex is provided \"as is\" and \"as available\" without warranties of any kind, express, implied, or statutory, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement, to the maximum extent permitted by law.",
+                body: "This website, its documentation, and any companion reference materials or support responses are provided \"as is\" and \"as available\" without warranties of any kind, express, implied, or statutory, including implied warranties of accuracy, completeness, merchantability, fitness for a particular purpose, and non-infringement, to the maximum extent permitted by applicable law. Any product warranties or statutory remedies applicable to the Windows application distributed through the Microsoft Store are governed by Microsoft's Standard Application License Terms.",
               ),
               (
                 heading: 'Limitation of Liability',
-                body: "To the fullest extent permitted by applicable law, Adam M., Spira Foundry, and contributors shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data or profits arising from your use of or inability to use Cain's Codex.",
+                body: "To the fullest extent permitted by applicable law, Adam M., Spira Foundry, and contributors shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data or profits arising out of or related to your use of—or inability to use—this website, its documentation, or support materials.",
               ),
               (
-                heading: 'Updates & Changes to Terms',
-                body: "We keep the latest Terms of Use posted on this page as Cain's Codex or storefront requirements evolve. Updated terms apply to new downloads and updated builds (including via the Microsoft Store) as of the effective date shown above.",
+                heading: 'Changes to These Terms',
+                body: 'We may update these website Terms of Use from time to time as our documentation, support resources, or legal requirements evolve. Any updates will be posted at this URL with a revised effective date and apply to your use of the website and documentation from that date forward.',
               ),
               (
                 heading: 'Contact',
