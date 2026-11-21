@@ -1573,6 +1573,10 @@ h1, h2, h3, h4, p {
   color: #374151;
 }
 
+.legal-doc-section__body + .legal-doc-section__body {
+  margin-top: 0.75rem;
+}
+
 .legal-doc-link {
   color: #0369a1;
   text-decoration: underline;
