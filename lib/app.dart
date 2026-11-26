@@ -81,7 +81,7 @@ class App extends StatelessComponent {
             projectName: "Cain's Codex",
             documentType: 'Terms of Use',
             topbarTag: 'Legal & Terms',
-            effectiveDate: '2026-11-24',
+            effectiveDate: '2026-11-25',
             contactEmail: SiteContent.cainsCodexSupportEmail,
             summary: "These Terms of Use govern your access to and use of the Cain's Codex website, documentation, and support resources hosted on the Spira Foundry website. Your acquisition, installation, and use of the Cain's Codex Windows application through the Microsoft Store are governed separately by Microsoft's Standard Application License Terms (SALT).",
             sections: [
@@ -99,7 +99,7 @@ class App extends StatelessComponent {
               ),
               (
                 heading: 'Intellectual Property',
-                body: "Copyright © 2026 Adam M. All Rights Reserved. The Cain's Codex name, original artwork, documentation, and website content remain the property of Adam M. Third-party and open-source software or assets referenced or used in connection with the project remain governed by their respective licenses.",
+                body: "Copyright © 2026 Adam M. All Rights Reserved. The Cain's Codex name, branding, visual assets, documentation, and website content remain the property of Adam M. to the extent permitted by applicable law. Third-party and open-source software or assets referenced or used in connection with the project remain governed by their respective licenses.",
               ),
               (
                 heading: 'Disclaimer of Warranties',
